@@ -1,0 +1,4 @@
+C:\Users\iserrata\Desktop\Projects\BiztalkProject\BP1\BizTalk Server Project1\bin\Debug\BizTalk Server Project1.dll
+C:\Users\iserrata\Desktop\Projects\BiztalkProject\BP1\BizTalk Server Project1\bin\Debug\BizTalk Server Project1.pdb
+C:\Users\iserrata\Desktop\Projects\BiztalkProject\BP1\BizTalk Server Project1\obj\Debug\BizTalk Server Project1.dll
+C:\Users\iserrata\Desktop\Projects\BiztalkProject\BP1\BizTalk Server Project1\obj\Debug\BizTalk Server Project1.pdb

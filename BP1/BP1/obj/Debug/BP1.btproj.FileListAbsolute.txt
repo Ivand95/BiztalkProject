@@ -6,3 +6,7 @@ D:\Ivan\Desktop\Projects\BiztalkProject\BP1\BP1\bin\Debug\BP1.dll
 D:\Ivan\Desktop\Projects\BiztalkProject\BP1\BP1\bin\Debug\BP1.pdb
 D:\Ivan\Desktop\Projects\BiztalkProject\BP1\BP1\obj\Debug\BP1.dll
 D:\Ivan\Desktop\Projects\BiztalkProject\BP1\BP1\obj\Debug\BP1.pdb
+C:\Users\iserrata\Desktop\Projects\BiztalkProject\BP1\BP1\obj\Debug\BP1.dll
+C:\Users\iserrata\Desktop\Projects\BiztalkProject\BP1\BP1\obj\Debug\BP1.pdb
+C:\Users\iserrata\Desktop\Projects\BiztalkProject\BP1\BP1\bin\Debug\BP1.dll
+C:\Users\iserrata\Desktop\Projects\BiztalkProject\BP1\BP1\bin\Debug\BP1.pdb

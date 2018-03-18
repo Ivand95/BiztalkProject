@@ -22,6 +22,8 @@ namespace BP1 {
       <xs:sequence>
         <xs:element name=""Nombre"" type=""xs:string"" />
         <xs:element name=""Apellido"" type=""xs:string"" />
+        <xs:element name=""TotalAmount"" type=""xs:int"" />
+        <xs:element name=""OrdenId"" type=""xs:string"" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

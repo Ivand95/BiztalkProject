@@ -3,27 +3,37 @@ namespace BP1 {
     
     [Microsoft.XLANGs.BaseTypes.SchemaReference(@"BP1.BP1_SourceSchema", typeof(global::BP1.BP1_SourceSchema))]
     [Microsoft.XLANGs.BaseTypes.SchemaReference(@"BP1.BP1_OutputSchema", typeof(global::BP1.BP1_OutputSchema))]
-    public sealed class BP1_Map : global::Microsoft.XLANGs.BaseTypes.TransformBase {
+    public sealed class Map1 : global::Microsoft.XLANGs.BaseTypes.TransformBase {
         
         private const string _strMap = @"<?xml version=""1.0"" encoding=""UTF-16""?>
-<xsl:stylesheet xmlns:xsl=""http://www.w3.org/1999/XSL/Transform"" xmlns:msxsl=""urn:schemas-microsoft-com:xslt"" xmlns:var=""http://schemas.microsoft.com/BizTalk/2003/var"" exclude-result-prefixes=""msxsl var s0"" version=""1.0"" xmlns:s0=""http://BP1.BP1_SourceSchema"" xmlns:ns0=""http://BP1.BP1_OutputSchema"">
+<xsl:stylesheet xmlns:xsl=""http://www.w3.org/1999/XSL/Transform"" xmlns:msxsl=""urn:schemas-microsoft-com:xslt"" xmlns:var=""http://schemas.microsoft.com/BizTalk/2003/var"" exclude-result-prefixes=""msxsl var s0 userCSharp"" version=""1.0"" xmlns:s0=""http://BP1.BP1_SourceSchema"" xmlns:ns0=""http://BP1.BP1_OutputSchema"" xmlns:userCSharp=""http://schemas.microsoft.com/BizTalk/2003/userCSharp"">
   <xsl:output omit-xml-declaration=""yes"" method=""xml"" version=""1.0"" />
   <xsl:template match=""/"">
     <xsl:apply-templates select=""/s0:Root"" />
   </xsl:template>
   <xsl:template match=""/s0:Root"">
+    <xsl:variable name=""var:v1"" select=""userCSharp:StringConcat(string(Nombre/text()) , string(Apellido/text()))"" />
     <ns0:Root>
-      <Apellido>
-        <xsl:value-of select=""Apellido/text()"" />
-      </Apellido>
-      <Nombre>
-        <xsl:value-of select=""Nombre/text()"" />
-      </Nombre>
-      <Edad>
-        <xsl:value-of select=""Edad/text()"" />
-      </Edad>
+      <FullName>
+        <xsl:value-of select=""$var:v1"" />
+      </FullName>
+      <TotalAmount>
+        <xsl:value-of select=""TotalAmount/text()"" />
+      </TotalAmount>
+      <OrdenId>
+        <xsl:value-of select=""OrdenId/text()"" />
+      </OrdenId>
     </ns0:Root>
   </xsl:template>
+  <msxsl:script language=""C#"" implements-prefix=""userCSharp""><![CDATA[
+public string StringConcat(string param0, string param1)
+{
+   return param0 + param1;
+}
+
+
+
+]]></msxsl:script>
 </xsl:stylesheet>";
         
         private const int _useXSLTransform = 0;

@@ -1,4 +1,4 @@
-namespace BP1 {
+namespace BizTalk_Server_Project1 {
     using Microsoft.XLANGs.BaseTypes;
     
     
@@ -6,17 +6,17 @@ namespace BP1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [SchemaType(SchemaTypeEnum.Document)]
-    [Schema(@"http://BP1.BP1_OutputSchema",@"Root")]
+    [Schema(@"http://BizTalk_Server_Project1.Schema1",@"Root")]
     [System.SerializableAttribute()]
     [SchemaRoots(new string[] {@"Root"})]
-    public sealed class BP1_OutputSchema : Microsoft.XLANGs.BaseTypes.SchemaBase {
+    public sealed class Schema1 : Microsoft.XLANGs.BaseTypes.SchemaBase {
         
         [System.NonSerializedAttribute()]
         private static object _rawSchema;
         
         [System.NonSerializedAttribute()]
         private const string _strSchema = @"<?xml version=""1.0"" encoding=""utf-16""?>
-<xs:schema xmlns=""http://BP1.BP1_OutputSchema"" xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" targetNamespace=""http://BP1.BP1_OutputSchema"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
+<xs:schema xmlns=""http://BizTalk_Server_Project1.Schema1"" xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" targetNamespace=""http://BizTalk_Server_Project1.Schema1"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
   <xs:element name=""Root"">
     <xs:complexType>
       <xs:sequence>
@@ -28,7 +28,7 @@ namespace BP1 {
   </xs:element>
 </xs:schema>";
         
-        public BP1_OutputSchema() {
+        public Schema1() {
         }
         
         public override string XmlContent {
